@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # devise_for :users
   devise_for :users, path_prefix: "devise", controllers: { registrations: "registrations" }
 
   namespace :api, defaults: { format: :json } do
